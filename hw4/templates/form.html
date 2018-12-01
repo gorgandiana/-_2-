@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- Everything before <html> tag is used to beautify the webpage. You can copy it to your website without changing it for the same effect. -->
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <style>
+        .row {
+        margin-top: 15px
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <form>
+
+        <div class="row">
+            <label class="col-md-1">Слово</label>
+            <label class="col-md-2">Перевод</label>
+            <label class="col-md-4">Комментарий</label>
+            <label class="col-md-1">Имя: </label>
+            <div class="col-md-2">
+                <input type="text" class="form-control" name="name">
+            </div>
+        </div>
+        <div class="row">
+            <label class="col-md-1">я</label>
+            <div class="col-md-2">
+                <input type="text" class="form-control" name="word1">
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="com1">
+            </div>
+            <label class="col-md-1">Фамилия: </label>
+            <div class="col-md-2">
+                <input type="text" class="form-control" name="surname">
+            </div>
+        </div>
+        <div class="row">
+            <label class="col-md-1">ты</label>
+            <div class="col-md-2">
+                <input type="text" class="form-control" name="word2">
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="com2">
+            </div>
+
+            <label class="col-md-1">Язык: </label>
+            <div class="col-md-2">
+                <input type="text" class="form-control" name="lang">
+            </div>
+        </div>
+        <div class="row">
+            <label class="col-md-1">это</label>
+            <div class="col-md-2">
+                <input type="text" class="form-control" name="word3">
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="com3">
+            </div>
+        </div>
+        <div class="row">
+            <label class="col-md-1">много</label>
+            <div class="col-md-2">
+                <input type="text" class="form-control" name="word4">
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="com4">
+            </div>
+        </div>
+        <div class="row">
+            <label class="col-md-1">один</label>
+            <div class="col-md-2">
+                <input type="text" class="form-control" name="word5">
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="com5">
+            </div>
+        </div>
+        <div class="row">
+            <label class="col-md-1">человек</label>
+            <div class="col-md-2">
+                <input type="text" class="form-control" name="word6">
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="com6">
+            </div>
+        </div>
+        <div class="row">
+            <label class="col-md-1">птица</label>
+            <div class="col-md-2">
+                <input type="text" class="form-control" name="word7">
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="com7">
+            </div>
+        </div>
+        <div class="row">
+            <label class="col-md-1">собака</label>
+            <div class="col-md-2">
+                <input type="text" class="form-control" name="word8">
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="com8">
+            </div>
+        </div>
+        <div class="row">
+            <label class="col-md-1">дерево</label>
+            <div class="col-md-2">
+                <input type="text" class="form-control" name="word9">
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="com9">
+            </div>
+        </div>
+        <div class="row">
+            <label class="col-md-1">лист</label>
+            <div class="col-md-2">
+                <input type="text" class="form-control" name="word10">
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="com10">
+            </div>
+        </div>
+        <center>
+            <div class="row">
+                <input class="btn btn-light btn-lg" type="submit" value="Отправить">
+            </div>
+            <div class="row">
+                {% if error: %}
+                <div class="alert alert-warning" role="alert">
+                    Ошибка, данные о себе и поля перевода должны быть заполнены
+                </div>
+                {% endif %}
+            </div>
+        </center>
+    </form>
+</div>
+</body>
+</html>
